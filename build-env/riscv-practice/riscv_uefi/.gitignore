@@ -1,0 +1,8 @@
+qemu
+linux
+opensbi
+edk2
+buildroot
+Build
+RISCV_VIRT_*
+*.img

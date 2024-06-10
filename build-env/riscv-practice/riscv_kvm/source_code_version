@@ -1,0 +1,38 @@
+qemu https://gitlab.com/qemu-project/qemu.git
+
+commit adc97c4b808bb23d6bb17b8871787333af0086d2 (HEAD -> master, origin/staging, origin/master, origin/HEAD)
+
+Merge: 94d68c1136 61df91b33c
+Author: Richard Henderson <richard.henderson@linaro.org>
+Date:   Mon Jul 10 21:43:14 2023 +0100
+
+
+linux https://github.com/kvm-riscv/linux.git
+
+commit 06c2afb862f9da8dc5efa4b6076a0e48c3fbaaa5 (HEAD -> master, tag: v6.5-rc1, origin/riscv_kvm_queue, origin/riscv_kvm_fixes, origin/master, origin/HEAD)
+Author: Linus Torvalds <torvalds@linux-foundation.org>
+Date:   Sun Jul 9 13:53:13 2023 -0700
+
+
+dtc https://git.kernel.org/pub/scm/utils/dtc/dtc.git
+
+commit ccf1f62d59adc933fb348b866f351824cdd00c73 (HEAD -> master, origin/master, origin/main, origin/HEAD)
+
+Author: Yan-Jie Wang <yanjiewtw@gmail.com>
+Date:   Thu Jun 8 14:39:05 2023 +0800
+
+
+kvmtool https://git.kernel.org/pub/scm/linux/kernel/git/will/kvmtool.git
+
+commit 0b5e55fc032d1c6394b8ec7fe02d842813c903df (HEAD -> master, origin/master, origin/HEAD)
+
+Author: Jean-Philippe Brucker <jean-philippe@linaro.org>
+Date:   Wed Jun 28 12:23:32 2023 +0100
+
+
+opensbi https://github.com/riscv-software-src/opensbi.git
+
+commit ea6533ada828cf71b9359f566be0f9c640022543 (HEAD -> master, origin/master, origin/HEAD)
+
+Author: Anup Patel <apatel@ventanamicro.com>
+Date:   Tue Jul 11 09:00:31 2023 +0530
