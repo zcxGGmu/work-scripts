@@ -1,7 +1,7 @@
 #!/bin/bash
 
 $QEMU/build/qemu-system-riscv64 \
-	-cpu rv64 -M virt -m 512M -nographic \
+	-cpu rv64,v=true -M virt -m 512M -nographic \
 	-kernel $LINUX/build/arch/riscv/boot/Image \
 	-initrd ./rootfs_kvm_riscv64.img \
 	-append "root=/dev/ram rw console=ttyS0 earlycon=sbi" \
