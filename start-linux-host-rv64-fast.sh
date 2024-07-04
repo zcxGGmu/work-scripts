@@ -10,6 +10,6 @@ $QEMU/qemu-system-riscv64 \
     -drive file=$ROOTFS/rootfs.ext4,format=raw,id=hd0,cache=writeback \
     -device virtio-blk-pci,drive=hd0 \
     -netdev user,id=usernet,hostfwd=tcp:127.0.0.1:7722-0.0.0.0:22 \
-    -device virtio-net-pci,netdev=usernet \
+    -device virtio-net-pci,netdev=usernet -L $QEMU_SRC/pc-bios/ \
     -rtc clock=host,base=utc
 
