@@ -21,14 +21,14 @@ fi
 # Print configuration
 echo "Configuring and compiling the kernel for architecture: $ARCH_TYPE"
 
+# Export compile environment variables
+export ARCH=$ARCH
+export CROSS_COMPILE=$CROSS_COMPILE
+
 # Remove and create the build directory
 rm -rf ./build/
 make mrproper
 mkdir build
-
-# Export compile environment variables
-export ARCH=$ARCH
-export CROSS_COMPILE=$CROSS_COMPILE
 
 # Configure and compile the kernel
 make O=build defconfig
