@@ -2,9 +2,9 @@
 
 $QEMU/qemu-system-riscv64 \
     -M virt \
-    -cpu rv64,v=true \
+    -cpu rv64,v=true,sscofpmf=true \
     -m 4G -nographic \
-    -smp 8 \
+    -smp 4 \
     -kernel $LINUX/Image \
     -append "root=/dev/vda rw console=ttyS0 loglevel=3 earlycon=sbi" \
     -drive file=$ROOTFS/rootfs.ext4,format=raw,id=hd0,cache=writeback \
