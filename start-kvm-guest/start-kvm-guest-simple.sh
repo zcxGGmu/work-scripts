@@ -1,7 +1,7 @@
 #!/bin/bash
 
 $QEMU/qemu-system-riscv64 \
-	-cpu rv64 -M virt \
+	-cpu rv64 -M virt --enable-kvm \
 	-m 512M -nographic \
 	-kernel $LINUX/Image \
 	-initrd $ROOTFS/rootfs_kvm_riscv64.img \
